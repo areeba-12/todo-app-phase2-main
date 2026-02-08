@@ -26,7 +26,7 @@ def create_application() -> FastAPI:
         redoc_url="/redoc",
     )
     origins = [
-    "https://todo-app-phase2giaic.vercel.app",
+    "https://todo-app-phase2-main.vercel.app",
     "http://localhost:3000",
 ]
     # Add CORS middleware
@@ -70,4 +70,4 @@ app = create_application()
 # For uvicorn to run the app
 if __name__ == "__main__":
     import uvicorn
-    uvicorn.run(app, host="0.0.0.0", port=8000)
+    uvicorn.run(app, host="0.0.0.0", port=8080)
