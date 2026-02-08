@@ -32,6 +32,9 @@ def create_application() -> FastAPI:
 
     app.add_middleware(
         CORSMiddleware,
+         allow_origins=[
+        "https://todo-app-phase2-main.vercel.app"
+    ],
         allow_origins=[frontend_origin],
         allow_credentials=True,
         allow_methods=["*"],
