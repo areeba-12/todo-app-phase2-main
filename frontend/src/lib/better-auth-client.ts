@@ -2,7 +2,7 @@
 import { useState, useEffect } from 'react';
 
 // Get API base URL from environment or default
-const API_BASE_URL = process.env.NEXT_PUBLIC_API_BASE_URL || 'https://todo-app-phase2-main-production.up.railway.app/';
+const API_BASE_URL = process.env.NEXT_PUBLIC_API_BASE_URL || 'https://todo-app-phase2-main-production.up.railway.app';
 
 // Store token in localStorage for persistence
 const TOKEN_KEY = 'todo_app_token';
