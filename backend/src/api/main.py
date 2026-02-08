@@ -32,9 +32,6 @@ def create_application() -> FastAPI:
 
     app.add_middleware(
         CORSMiddleware,
-         allow_origins=[
-        "https://todo-app-phase2-main.vercel.app"
-    ],
         allow_origins=[frontend_origin],
         allow_credentials=True,
         allow_methods=["*"],
@@ -70,4 +67,4 @@ app = create_application()
 # For development/testing purposes
 if __name__ == "__main__":
     import uvicorn
-    uvicorn.run(app, host="0.0.0.0", port=8000)
+    uvicorn.run(app, host="0.0.0.0", port=8080)
