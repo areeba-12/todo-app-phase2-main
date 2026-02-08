@@ -28,7 +28,7 @@ def create_application() -> FastAPI:
     )
 
     # CORS configuration for frontend integration
-    frontend_origin = os.getenv("FRONTEND_ORIGIN", "https://todo-app-phase2giaic.vercel.app/")
+    frontend_origin = os.getenv("FRONTEND_ORIGIN", "https://todo-app-phase2-main.vercel.app")
 
     app.add_middleware(
         CORSMiddleware,
